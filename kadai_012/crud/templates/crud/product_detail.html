@@ -9,6 +9,7 @@
         <tr>
             <th>商品名</th>
             <th>価格</th>
+            <th>カテゴリ</th>
             <th>画像</th>
             <th>商品説明</th>
         </tr>
@@ -17,8 +18,9 @@
     <tr>
         <td>{{ product.name }}</td>
         <td>{{ product.price }} 円</td>
+        <td>{{ product.category }}</td>
         <td><img src="{{ product.img.url }}" style="width:100px height:auto;"></td>
-        <td>発売即重版、全世界ベストセラー</td>
+        <td></td>
  
     </tr>
 </table>
