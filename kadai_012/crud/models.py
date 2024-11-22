@@ -20,3 +20,7 @@ class Product(models.Model):
         # 新規作成・編集完了時のリダイレクト先
     def get_absolute_url(self):
         return reverse('list')
+    
+    def product_detail(request, product_id):
+        product = get_object_or_404(Product, id=product_id)
+        return render(request, 'product_detail.html', {'product': product})
